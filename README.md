@@ -46,38 +46,6 @@ Users are given an overview of the bot's features upon request. This serves as a
 4. **Visualization**: Select columns and graph types to visualize the cleaned dataset.
 5. **Receive Cleaned Data**: Once cleaning and visualization are done, you can request the cleaned dataset.
 
-## Installation and Setup
-To run the bot locally, follow these steps:
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/yourusername/telegram-data-analysis-bot.git
-   ```
-2. Install the necessary dependencies:
-   ```sh
-   pip install -r requirements.txt
-   ```
-3. Set your bot token in the `main()` function.
-4. Run the bot using:
-   ```sh
-   python bot.py
-   ```
-
-## Dependencies
-- **Python**: 3.x
-- **pandas**: For data handling and analysis
-- **matplotlib**: For data visualization
-- **python-telegram-bot**: For Telegram API interaction
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contributing
-Contributions are welcome! Feel free to fork this repository and submit a pull request with any features or bug fixes you may have.
-
-## Contact
-For any questions or issues, you can reach out to the project maintainer via email: [your-email@example.com]
-
----
 
 # Telegram Ma'lumot Tahlili Bot
 
@@ -144,13 +112,4 @@ Botni lokal kompyuterda ishlatish uchun quyidagi qadamlarni bajaring:
 - **pandas**: Ma'lumotlarni tahlil qilish uchun
 - **matplotlib**: Ma'lumotlarni vizualizatsiya qilish uchun
 - **python-telegram-bot**: Telegram API bilan ishlash uchun
-
-## Litsenziya
-Ushbu loyiha MIT litsenziyasi asosida taqdim etilgan - batafsil ma'lumot olish uchun [LICENSE](LICENSE) faylini ko'ring.
-
-## Hissa Qo'shish
-Loyihaga hissa qo'shishni xush kelibsiz! Repozitoriyani fork qilib, yangi xususiyatlar yoki xatolarni tuzatish bilan pull request yuborishingiz mumkin.
-
-## Bog'lanish
-Savollar yoki muammolar yuzasidan loyiha menejeriga elektron pochta orqali murojaat qilishingiz mumkin: [your-email@example.com]
 
