@@ -1,3 +1,5 @@
+Flask
 aiogram
 requests
 python-dotenv
+pandas
