@@ -3,3 +3,4 @@ aiogram
 requests
 python-dotenv
 pandas
+matplotlib
