@@ -3,6 +3,15 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackContext, MessageHandler, CallbackQueryHandler, filters
+from flask import Flask
+import threading
+
+# Flask app server
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return "Bot is running"
 
 # Global dictionary to store datasets and user preferences for each user
 user_data = {}
@@ -223,6 +232,9 @@ def main():
     application.add_handler(CallbackQueryHandler(view_another_graph, pattern='view_another_graph'))
     application.add_handler(CallbackQueryHandler(send_cleaned_dataset, pattern='send_cleaned_dataset'))
     application.add_handler(CallbackQueryHandler(show_bot_features, pattern='show_bot_features'))
+
+    # Flask serverini yangi ipda va portda ishga tushirish
+    threading.Thread(target=lambda: app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))).start()
 
     # Botni ishga tushirish
     application.run_polling()
