@@ -239,11 +239,6 @@ def main():
     # Botni ishga tushirish
     application.run_polling()
 
-@app.route('/')
-def index():
-    return "Bot is running"
-
 if __name__ == '__main__':
-    # Flask web serverini yangi ipda va portda ishga tushirish
-    threading.Thread(target=lambda: app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))).start()
+    main()
 
