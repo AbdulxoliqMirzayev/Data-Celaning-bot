@@ -1,0 +1,3 @@
+#!/bin/bash
+source venv/bin/activate
+python ali_brands_bot.py
